@@ -1,7 +1,5 @@
 <?php  
-	$randseed=19;
-//$randseed=rand(1,100);
-//echo $randseed;
+	$randseed=18;
     $str=file_get_contents('http://cn.bing.com/HPImageArchive.aspx?idx='.$randseed.'&n=1');  
     if(preg_match("/<url>(.+?)<\/url>/ies",$str,$matches)){  
         $imgurl='http://cn.bing.com'.$matches[1];  
