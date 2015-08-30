@@ -1,5 +1,5 @@
 <?php  
-	$randseed=10;
+	$randseed=11;
 //$randseed=rand(1,100);
 //echo $randseed;
     $str=file_get_contents('http://cn.bing.com/HPImageArchive.aspx?idx='.$randseed.'&n=1');  
