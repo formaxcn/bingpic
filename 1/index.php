@@ -1,8 +1,9 @@
 <?php  
 	$randseed=rand(0,18);
-    $str=file_get_contents('http://cn.bing.com/HPImageArchive.aspx?idx='.$randseed.'&n=1');  
+    $str=file_get_contents('http://www.bing.com/HPImageArchive.aspx?idx='.$randseed.'&n=1');  
     if(preg_match("/<url>(.+?)<\/url>/ies",$str,$matches)){  
-        $imgurl='http://cn.bing.com'.$matches[1];  
+        $imgurl='http://www.bing.com'.$matches[1];
+		$imgurl=str_replace("1366x768","1920x1080",$imgurl);
     }  
     if($imgurl){  
         header('Content-Type: image/JPEG');  
