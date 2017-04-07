@@ -1,7 +1,5 @@
-application: tzhbing
-version: 8
 runtime: php55
-api_version: 8
+api_version: 1
 
 handlers:
 - url: /.*
